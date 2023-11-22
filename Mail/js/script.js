@@ -31,9 +31,6 @@ sendButton.addEventListener("click", function() {
     }
   }
 
-  // stampa un messaggio appropriato sull’esito del controllo
-  console.log(accessoAutorizzato);
-
   // Verifica l'accesso autorizzato e stampa un messaggio
   let message;
   if (accessoAutorizzato) {
