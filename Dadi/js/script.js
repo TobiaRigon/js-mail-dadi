@@ -1,4 +1,8 @@
+const playerButton = document.getElementById("player_button");
 
+playerButton.addEventListener("click", function() {
+ 
+  
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. 
 // numero random giocatore
 let playerNumber = Math.floor(Math.random() * 6) + 1;
@@ -17,3 +21,4 @@ if(playerNumber>pcNumber){
 console.log("Numero del giocatore:",playerNumber);
 console.log("Numero del PC:", pcNumber);
 console.log(result);
+});
