@@ -11,14 +11,19 @@ let pcNumber = Math.floor(Math.random() * 6) + 1;
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 let result ;
 if(playerNumber>pcNumber){
-  result="win";
+  result="won";
 }else if(playerNumber<pcNumber){
-  result="lose";
+  result="lost";
 }else{
-  result="draw";
+  result="drew";
 }
 // Genera messaggio vittoria o sconfitta
 console.log("Numero del giocatore:",playerNumber);
 console.log("Numero del PC:", pcNumber);
 console.log(result);
+
+document.getElementById("player_result").innerHTML =`Your result is: ${playerNumber}`;
+document.getElementById("pc_result").innerHTML =`PC result is: ${pcNumber}`;
+document.getElementById("message").innerHTML =` You ${result}!`;
+
 });
