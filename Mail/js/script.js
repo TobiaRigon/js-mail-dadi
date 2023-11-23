@@ -16,19 +16,21 @@ const mailList = [
 const sendButton = document.getElementById("send_button");
 let accessoAutorizzato;
 let mailUser;
+accessoAutorizzato = false;
 
 // al click
 sendButton.addEventListener("click", function() {
   // Chiedi all’utente la sua email
   let mailUser = document.getElementById("mail_user").value;
-  accessoAutorizzato = false;
+ 
   // per ogni elemento della lista
   for (let i = 0; i < mailList.length; i++) {
     // controlla che sia nella lista di chi può accedere
+   
     if (mailUser === mailList[i]) {
       accessoAutorizzato = true;
-      break;
     }
+
   }
 
   // Verifica l'accesso autorizzato e stampa un messaggio
